@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 typedef AsyncButtonBuilderCallback = Widget Function(
   BuildContext context,
   Widget child,
-  AsyncCallback? callback,
+  AsyncCallback callback,
   ButtonState buttonState,
 );
 
@@ -97,7 +97,7 @@ class AsyncButtonBuilder extends StatefulWidget {
   ///   width: 16.0,
   ///   child: CircularProgressIndicator(),
   /// )
-  final Widget? loadingWidget;
+  final Widget loadingWidget;
 
   /// The widget used to replace the [child] when the button is in a success
   /// state. If this is null the default widget is:
@@ -106,7 +106,7 @@ class AsyncButtonBuilder extends StatefulWidget {
   ///   Icons.check,
   ///   color: Theme.of(context).accentColor,
   /// );
-  final Widget? successWidget;
+  final Widget successWidget;
 
   /// The widget used to replace the [child] when the button is in a error
   /// state. If this is null the default widget is:
@@ -115,7 +115,7 @@ class AsyncButtonBuilder extends StatefulWidget {
   ///   Icons.error,
   ///   color: Theme.of(context).errorColor,
   /// )
-  final Widget? errorWidget;
+  final Widget errorWidget;
 
   /// Whether to show the [successWidget] on success.
   final bool showSuccess;
@@ -126,12 +126,12 @@ class AsyncButtonBuilder extends StatefulWidget {
   /// Optional [EdgeInsets] that will wrap around the [errorWidget]. This is a
   /// convenience field that can be replaced by defining your own [errorWidget]
   /// and wrapping it in a [Padding].
-  final EdgeInsets? errorPadding;
+  final EdgeInsets errorPadding;
 
   /// Optional [EdgeInsets] that will wrap around the [successWidget]. This is a
   /// convenience field that can be replaced by defining your own
   /// [successWidget] and wrapping it in a [Padding].
-  final EdgeInsets? successPadding;
+  final EdgeInsets successPadding;
 
   /// Defines a custom transition when animating between any state and `idle`
   final AnimatedSwitcherTransitionBuilder idleTransitionBuilder;
@@ -196,10 +196,10 @@ class AsyncButtonBuilder extends StatefulWidget {
   final bool animateSize;
 
   const AsyncButtonBuilder({
-    Key? key,
-    required this.child,
-    required this.onPressed,
-    required this.builder,
+    Key key,
+    @required this.child,
+    @required this.onPressed,
+    @required this.builder,
     this.loadingWidget,
     this.successWidget,
     this.errorWidget,
@@ -229,7 +229,31 @@ class AsyncButtonBuilder extends StatefulWidget {
     this.sizeClipBehavior = Clip.hardEdge,
     this.sizeAlignment = Alignment.center,
     this.animateSize = true,
-  }) : super(key: key);
+  })  : assert(showSuccess != null),
+        assert(showError != null),
+        assert(buttonState != null),
+        assert(duration != null),
+        assert(reverseDuration != null),
+        assert(disabled != null),
+        assert(successDuration != null),
+        assert(errorDuration != null),
+        assert(loadingTransitionBuilder != null),
+        assert(idleTransitionBuilder != null),
+        assert(successTransitionBuilder != null),
+        assert(errorTransitionBuilder != null),
+        assert(idleSwitchInCurve != null),
+        assert(loadingSwitchInCurve != null),
+        assert(successSwitchInCurve != null),
+        assert(errorSwitchInCurve != null),
+        assert(idleSwitchOutCurve != null),
+        assert(loadingSwitchOutCurve != null),
+        assert(successSwitchOutCurve != null),
+        assert(errorSwitchOutCurve != null),
+        assert(sizeCurve != null),
+        assert(sizeClipBehavior != null),
+        assert(sizeAlignment != null),
+        assert(animateSize != null),
+        super(key: key);
   // TODO: I need asserts that will assert the keys are different for child,
   // loading, error, etc. because otherwise transitions won't work as expected
   // and I'll get user issues
@@ -240,8 +264,8 @@ class AsyncButtonBuilder extends StatefulWidget {
 
 class _AsyncButtonBuilderState extends State<AsyncButtonBuilder>
     with SingleTickerProviderStateMixin {
-  late ButtonState buttonState;
-  Timer? timer;
+  ButtonState buttonState;
+  Timer timer;
 
   @override
   void initState() {

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'button_state.dart';
 
@@ -13,57 +13,62 @@ T _$identity<T>(T value) => value;
 class _$ButtonStateTearOff {
   const _$ButtonStateTearOff();
 
+// ignore: unused_element
   Idle idle() {
     return const Idle();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Success success() {
     return const Success();
   }
 
+// ignore: unused_element
   Error error() {
     return const Error();
   }
 }
 
 /// @nodoc
+// ignore: unused_element
 const $ButtonState = _$ButtonStateTearOff();
 
 /// @nodoc
 mixin _$ButtonState {
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() idle,
-    required TResult Function() loading,
-    required TResult Function() success,
-    required TResult Function() error,
+  TResult when<TResult extends Object>({
+    @required TResult idle(),
+    @required TResult loading(),
+    @required TResult success(),
+    @required TResult error(),
   });
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? idle,
-    TResult Function()? loading,
-    TResult Function()? success,
-    TResult Function()? error,
-    required TResult orElse(),
+  TResult maybeWhen<TResult extends Object>({
+    TResult idle(),
+    TResult loading(),
+    TResult success(),
+    TResult error(),
+    @required TResult orElse(),
   });
   @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Idle value) idle,
-    required TResult Function(Loading value) loading,
-    required TResult Function(Success value) success,
-    required TResult Function(Error value) error,
+  TResult map<TResult extends Object>({
+    @required TResult idle(Idle value),
+    @required TResult loading(Loading value),
+    @required TResult success(Success value),
+    @required TResult error(Error value),
   });
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Idle value)? idle,
-    TResult Function(Loading value)? loading,
-    TResult Function(Success value)? success,
-    TResult Function(Error value)? error,
-    required TResult orElse(),
+  TResult maybeMap<TResult extends Object>({
+    TResult idle(Idle value),
+    TResult loading(Loading value),
+    TResult success(Success value),
+    TResult error(Error value),
+    @required TResult orElse(),
   });
 }
 
@@ -118,24 +123,29 @@ class _$Idle implements Idle {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() idle,
-    required TResult Function() loading,
-    required TResult Function() success,
-    required TResult Function() error,
+  TResult when<TResult extends Object>({
+    @required TResult idle(),
+    @required TResult loading(),
+    @required TResult success(),
+    @required TResult error(),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return idle();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? idle,
-    TResult Function()? loading,
-    TResult Function()? success,
-    TResult Function()? error,
-    required TResult orElse(),
+  TResult maybeWhen<TResult extends Object>({
+    TResult idle(),
+    TResult loading(),
+    TResult success(),
+    TResult error(),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (idle != null) {
       return idle();
     }
@@ -144,24 +154,29 @@ class _$Idle implements Idle {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Idle value) idle,
-    required TResult Function(Loading value) loading,
-    required TResult Function(Success value) success,
-    required TResult Function(Error value) error,
+  TResult map<TResult extends Object>({
+    @required TResult idle(Idle value),
+    @required TResult loading(Loading value),
+    @required TResult success(Success value),
+    @required TResult error(Error value),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return idle(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Idle value)? idle,
-    TResult Function(Loading value)? loading,
-    TResult Function(Success value)? success,
-    TResult Function(Error value)? error,
-    required TResult orElse(),
+  TResult maybeMap<TResult extends Object>({
+    TResult idle(Idle value),
+    TResult loading(Loading value),
+    TResult success(Success value),
+    TResult error(Error value),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (idle != null) {
       return idle(this);
     }
@@ -208,24 +223,29 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() idle,
-    required TResult Function() loading,
-    required TResult Function() success,
-    required TResult Function() error,
+  TResult when<TResult extends Object>({
+    @required TResult idle(),
+    @required TResult loading(),
+    @required TResult success(),
+    @required TResult error(),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return loading();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? idle,
-    TResult Function()? loading,
-    TResult Function()? success,
-    TResult Function()? error,
-    required TResult orElse(),
+  TResult maybeWhen<TResult extends Object>({
+    TResult idle(),
+    TResult loading(),
+    TResult success(),
+    TResult error(),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (loading != null) {
       return loading();
     }
@@ -234,24 +254,29 @@ class _$Loading implements Loading {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Idle value) idle,
-    required TResult Function(Loading value) loading,
-    required TResult Function(Success value) success,
-    required TResult Function(Error value) error,
+  TResult map<TResult extends Object>({
+    @required TResult idle(Idle value),
+    @required TResult loading(Loading value),
+    @required TResult success(Success value),
+    @required TResult error(Error value),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return loading(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Idle value)? idle,
-    TResult Function(Loading value)? loading,
-    TResult Function(Success value)? success,
-    TResult Function(Error value)? error,
-    required TResult orElse(),
+  TResult maybeMap<TResult extends Object>({
+    TResult idle(Idle value),
+    TResult loading(Loading value),
+    TResult success(Success value),
+    TResult error(Error value),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (loading != null) {
       return loading(this);
     }
@@ -298,24 +323,29 @@ class _$Success implements Success {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() idle,
-    required TResult Function() loading,
-    required TResult Function() success,
-    required TResult Function() error,
+  TResult when<TResult extends Object>({
+    @required TResult idle(),
+    @required TResult loading(),
+    @required TResult success(),
+    @required TResult error(),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return success();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? idle,
-    TResult Function()? loading,
-    TResult Function()? success,
-    TResult Function()? error,
-    required TResult orElse(),
+  TResult maybeWhen<TResult extends Object>({
+    TResult idle(),
+    TResult loading(),
+    TResult success(),
+    TResult error(),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (success != null) {
       return success();
     }
@@ -324,24 +354,29 @@ class _$Success implements Success {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Idle value) idle,
-    required TResult Function(Loading value) loading,
-    required TResult Function(Success value) success,
-    required TResult Function(Error value) error,
+  TResult map<TResult extends Object>({
+    @required TResult idle(Idle value),
+    @required TResult loading(Loading value),
+    @required TResult success(Success value),
+    @required TResult error(Error value),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return success(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Idle value)? idle,
-    TResult Function(Loading value)? loading,
-    TResult Function(Success value)? success,
-    TResult Function(Error value)? error,
-    required TResult orElse(),
+  TResult maybeMap<TResult extends Object>({
+    TResult idle(Idle value),
+    TResult loading(Loading value),
+    TResult success(Success value),
+    TResult error(Error value),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (success != null) {
       return success(this);
     }
@@ -388,24 +423,29 @@ class _$Error implements Error {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() idle,
-    required TResult Function() loading,
-    required TResult Function() success,
-    required TResult Function() error,
+  TResult when<TResult extends Object>({
+    @required TResult idle(),
+    @required TResult loading(),
+    @required TResult success(),
+    @required TResult error(),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return error();
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? idle,
-    TResult Function()? loading,
-    TResult Function()? success,
-    TResult Function()? error,
-    required TResult orElse(),
+  TResult maybeWhen<TResult extends Object>({
+    TResult idle(),
+    TResult loading(),
+    TResult success(),
+    TResult error(),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (error != null) {
       return error();
     }
@@ -414,24 +454,29 @@ class _$Error implements Error {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Idle value) idle,
-    required TResult Function(Loading value) loading,
-    required TResult Function(Success value) success,
-    required TResult Function(Error value) error,
+  TResult map<TResult extends Object>({
+    @required TResult idle(Idle value),
+    @required TResult loading(Loading value),
+    @required TResult success(Success value),
+    @required TResult error(Error value),
   }) {
+    assert(idle != null);
+    assert(loading != null);
+    assert(success != null);
+    assert(error != null);
     return error(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Idle value)? idle,
-    TResult Function(Loading value)? loading,
-    TResult Function(Success value)? success,
-    TResult Function(Error value)? error,
-    required TResult orElse(),
+  TResult maybeMap<TResult extends Object>({
+    TResult idle(Idle value),
+    TResult loading(Loading value),
+    TResult success(Success value),
+    TResult error(Error value),
+    @required TResult orElse(),
   }) {
+    assert(orElse != null);
     if (error != null) {
       return error(this);
     }

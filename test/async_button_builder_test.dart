@@ -72,7 +72,7 @@ void main() {
         find.byType(TextButton).evaluate().first.widget as TextButton;
 
     expect(
-      () => button.onPressed!.call(),
+      () => button.onPressed.call(),
       throwsA(isInstanceOf<ArgumentError>()),
     );
 
