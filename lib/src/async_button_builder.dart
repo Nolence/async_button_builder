@@ -186,8 +186,9 @@ class AsyncButtonBuilder extends StatefulWidget {
   /// Defines a curve for the internal [AnimatedSize]
   final Curve sizeCurve;
 
+  // Flutter Stable does not support this
   /// Defines the [Clip] for the internal [AnimatedSize]
-  final Clip sizeClipBehavior;
+  // final Clip sizeClipBehavior;
 
   /// Defines the [Alignment] for the internal [AnimatedSize]
   final Alignment sizeAlignment;
@@ -226,7 +227,7 @@ class AsyncButtonBuilder extends StatefulWidget {
     this.successSwitchOutCurve = Curves.linear,
     this.errorSwitchOutCurve = Curves.linear,
     this.sizeCurve = Curves.linear,
-    this.sizeClipBehavior = Clip.hardEdge,
+    // this.sizeClipBehavior = Clip.hardEdge,
     this.sizeAlignment = Alignment.center,
     this.animateSize = true,
   })  : assert(showSuccess != null),
@@ -250,7 +251,7 @@ class AsyncButtonBuilder extends StatefulWidget {
         assert(successSwitchOutCurve != null),
         assert(errorSwitchOutCurve != null),
         assert(sizeCurve != null),
-        assert(sizeClipBehavior != null),
+        // assert(sizeClipBehavior != null),
         assert(sizeAlignment != null),
         assert(animateSize != null),
         super(key: key);
@@ -369,7 +370,8 @@ class _AsyncButtonBuilderState extends State<AsyncButtonBuilder>
               duration: widget.duration,
               reverseDuration: widget.reverseDuration,
               alignment: widget.sizeAlignment,
-              clipBehavior: widget.sizeClipBehavior,
+              // Flutter Stable does not support this yet
+              // clipBehavior: widget.sizeClipBehavior,
               curve: widget.sizeCurve,
             )
           : switcher,
